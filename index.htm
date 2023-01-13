@@ -1,0 +1,117 @@
+<?php
+include_once '../portal/class/general.php';
+include 'config.php';
+$tipo = PAG_PRODUCTO;
+include 'cabecera.php';
+?>
+
+  <!-- Cuerpo -->
+  <div id='cuerpo'>
+   <div> <!-- sinid_1 -->
+  <!-- bloque de contenido -->
+  <div id='container'>
+   <table class='tbmenu' summary='Columna 1: Descripción del producto, Columna 2: menú'>
+    <tr><td class='tdmenu'>
+     <div id='columizq'>
+      <div id='menu-producto'>
+
+        <p>El <strong>Índice de Producción Industrial de Andalucía</strong> tiene por objeto medir la oferta de bienes 
+producidos mensualmente por la industria andaluza, indicando la evolución mensual que experimenta la parte del Valor 
+Añadido Bruto (VAB) que tiene su origen en el sector industrial.</p>
+
+	<p class="marcofondos"><img src="../portal/images/icons/Logo_UE_FEDER.gif" class="brd" alt="Fondos"></p>
+
+	<ul>
+        <li>Organismo: Instituto de Estadística y Cartografía de Andalucía.</li>
+        <li>Ámbito: Andalucía.</li>
+    </ul>
+
+	</div>
+
+      <div id='actualizacion'>
+        <p>Actualizaciones:</p>
+        <ul class='circle'>
+          <li>Último dato publicado: 11/01/2023</li>
+          <li><a href="actualizaciones.htm">Registro de actualizaciones</a></li>
+        </ul>
+
+        <p>Metodología:</p>
+        <ul type='Circle'>
+          <li><a href="metodologia/Nota_tecnica_COVID-19.pdf">Nota técnica sobre el efecto del COVID-19</a></li>
+          <li><a href="metodologia/NotasMetodologicas.pdf">Notas metodológicas. Base 2015</a></li>
+		  <li><a href="metodologia/MT050707.pdf">Memoria técnica</a></li>
+          <li><a href="metodologia/IME050707.pdf">Informe metodológico estandarizado</a></li>
+          <li><a href="metodologia/IC050707.pdf">Indicadores de calidad</a></li>
+        </ul>
+      </div>
+      <?php include 'social.php'; ?> 
+     </div>
+    </td><td>
+     <div id='contenido'>
+       <h2 class='nomProd'>Índice de Producción Industrial de Andalucía&nbsp;&nbsp;&nbsp;<img src="../portal/images/images/andaluciasemueveconeuropa.png" alt="Andalucía se mueve con Europa" class="andaluciaSeMueve"></h2>
+	   
+		<ul class="enlacesProd">
+		<li class="itemProd"><a href="notaprensa.htm">Nota divulgativa</a></li> 
+		</ul>
+			   
+
+			   <!-- datos -->
+			   <p><strong>DATOS</strong></p>
+			   <ul class='enlacesProd'>
+
+				   <li class='itemProd'> Tabulación detallada. Base 2015<br><br>
+				   <ul>
+					<li class="itemProd"><a href="https://www.juntadeandalucia.es/institutodeestadisticaycartografia/badea/informe/datosaldia?CodOper=b3_331&idNode=7265">Último mes: noviembre 2022</a> (Datos disponibles desde enero 1984)</li>
+					<li class="itemProd">Mensuales anteriores: debe acceder al <a href="https://www.juntadeandalucia.es/institutodeestadisticaycartografia/badea/informe/datosaldia?CodOper=b3_331&idNode=7265">último mes</a> y filtrar</li>
+				  </ul>
+				  </li>   		
+			   
+				  <!-- Series evolutivas  -->
+					<li class='itemProd'><a href='https://ws089.juntadeandalucia.es/indea-public/?tema=994'>Series evolutivas</a></li>
+			   
+				  <!-- Bases anteriores  -->
+				   <li class='itemProd'><a href='otrasbases/index.htm'>Resultados con bases no vigentes</a></li>
+				   </ul>
+
+				<p><strong>Nota:</strong> Para las series ajustadas de efectos estacionales y de calendario, el Instituto de Estadística 
+				y Cartografía de Andalucía ha realizado un planteamiento de modelización metodológica acorde con las orientaciones
+				de la Oficina Estadística de la Unión Europea (Eurostat). De esta forma, cuando se ha comprobado su significatividad,
+				se han introducido los outliers necesarios con el objeto de modelizar el efecto que el COVID está teniendo en las series.</p>
+				<p>Conforme vayan estando disponibles los datos de periodos posteriores, se irán analizando si estos outliers tienen
+				que modificarse por otros tipos de intervención de acuerdo con el comportamiento de las distintas series.</p>
+				   
+				   
+		<!--<p><strong>Nota:</strong> Para las series ajustadas de efectos estacionales y de calendario, el Instituto de Estadística 
+		y Cartografía de Andalucía ha realizado un planteamiento de modelización metodológica acorde con las orientaciones 
+		de la Oficina Estadística de la Unión Europea (Eurostat). De esta manera, se ha modelizado un outlier aditivo, en los datos 
+		referidos a marzo de 2020, para estimar el efecto que el COVID-19 ha provocado en las series durante este mes.</p>
+		<p>Conforme vayan estando disponibles los datos de meses posteriores, se irá analizando si este impulso debe modificarse 
+		por otro tipo de intervención o si deben realizarse intervenciones en otros datos de la serie.</p>-->
+				   
+			   <!-- fin datos -->		
+		
+		
+		
+		
+       
+
+       <div class='otraActividad'>
+         <p>Actividades relacionadas:</p>
+         <ul>
+           <li><a href='../eindus/index.htm'>Encuesta Industrial Anual de Empresas</a></li>
+           <li><a href='../encindusprod/index.htm'>Encuesta Industrial Anual de Productos</a></li>
+         </ul>
+       </div>
+	   
+     </div>
+    </td></tr>
+   </table>
+
+  </div>
+  <!-- fin bloque de contenido -->
+
+   </div> <!-- fin sinid_1 -->
+  </div> <!-- fin id=cuerpo -->
+  <!-- fin Cuerpo -->
+  
+<?php include 'pie.php'; ?>

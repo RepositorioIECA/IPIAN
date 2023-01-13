@@ -1,0 +1,111 @@
+<?php
+include_once '../portal/class/general.php';
+include 'config.php';
+$tipo = PAG_PRODUCTO;
+include 'cabecera.php';
+?>
+
+  <!-- Cuerpo -->
+  <div id='cuerpo'>
+   <div> <!-- sinid_1 -->
+  <!-- bloque de contenido -->
+  <div id='container'>
+   <table class='tbmenu' summary='Columna 1: Descripción del producto, Columna 2: menú'>
+    <tr><td class='tdmenu'>
+     <div id='columizq'>
+      <div id='menu-producto'>
+
+        <p>The <strong>Industrial Production Index of Andalusia (IPIAN)</strong> is intended to measure the supply of goods 
+produced monthly by Andalusian industry, indicating the monthly evolution experienced by the part of Gross Value Added (GVA) 
+originated from the industrial sector.</p>
+
+		<p class="marcofondos"><img src="../portal/images/icons/Logo_UE_FEDER.gif" class="brd" alt="Fondos"></p>
+
+        <ul>
+          <li>Organization: Institute of Statistics and Cartography of Andalusia.</li>
+          <li>Scope: Andalusia.</li>
+        </ul>
+      </div>
+
+      <div id='actualizacion'>
+        <p>Updates:</p>
+        <ul class='circle'>
+          <li>Last data published 11/01/2023</li>
+          <li><a href="actualizaciones-en.htm">Update log</a></li>
+        </ul>
+
+        <p>Methodology:</p>
+        <ul type='Circle'>
+		  <li><a href="metodologia/Nota_tecnica_COVID-19.pdf">Technical note on the effect of COVID-19</a></li>
+		  <li><a href="metodologia/NotasMetodologicas.pdf">Methodological notes. Base 2015</a></li>
+          <li><a href="metodologia/MT050707.pdf">Technical report</a></li>
+          <li><a href="metodologia/IME050707.pdf">Standardized methodological report</a></li>
+          <li><a href="metodologia/IC050707.pdf">Quality indicator</a></li>
+        </ul>
+      </div>
+      <?php include 'social.php'; ?> 
+     </div>
+    </td><td>
+     <div id='contenido'>
+       <h2 class='nomProd'>Industrial Production Index of Andalusia&nbsp;&nbsp;&nbsp;<img src="../portal/images/images/andaluciasemueveconeuropa.png" alt="Andalucía se mueve con Europa" class="andaluciaSeMueve"></h2>
+	   
+		<ul class="enlacesProd">
+		<li class="itemProd"><a href="notaprensa.htm">Informative note</a></li> 
+		</ul>
+
+		
+		
+			   <!-- datos -->
+			   <p><strong>DATA</strong></p>
+			   <ul class='enlacesProd'>
+
+				   <li class='itemProd'> Detailed tabulation. Base 2015<br><br>
+				   <ul>
+					<li class="itemProd"><a href="https://www.juntadeandalucia.es/institutodeestadisticaycartografia/badea/informe/datosaldia?CodOper=b3_331&idNode=7265">Last month: November 2022</a> (Data available from January 1984)</li>
+					<li class="itemProd">Other months: to view previous months must log in <a href="https://www.juntadeandalucia.es/institutodeestadisticaycartografia/badea/informe/datosaldia?CodOper=b3_331&idNode=7265">last month</a> and filter</li>
+				  </ul>
+				  </li>   
+	   
+				  <!-- Series evolutivas  -->
+					<li class='itemProd'><a href='https://ws089.juntadeandalucia.es/indea-public/?tema=994'>Evolutionary series</a></li>
+
+	             <!-- Bases anteriores  -->
+		              <li class='itemProd'><a href='otrasbases/index-en.htm'>Results with not applicable bases</a></li>
+                         </ul>
+
+		<p><strong>Note:</strong>For the adjusted series of seasonal and calendar effects, the Institute of Statistics and 
+		Cartography of Andalusia has carried out a methodological modeling approach in accordance with the guidelines
+		of the Statistical Office of the European Union (Eurostat). In this way, when its significance 
+		has been verified, the necessary outliers have been introduced in order to model the effect that
+		COVID-19 is having on the series.</p>
+		<p>As data from subsequent periods become available, it will be analyzed whether these outliers have to be modified
+		by other types of intervention according to the behavior of the different series.</p>
+						 
+		<!--<p><strong>Note:</strong> For the adjusted series of seasonal and calendar effects, the Institute of Statistics and 
+		Cartography of Andalusia has carried out a methodological modeling approach in accordance with the guidelines 
+		of the Statistical Office of the European Union (Eurostat). In this way, an additive outlier has been modeled, in 
+		the data referring to March 2020, to estimate the effect that COVID-19 has had on the series during this month.</p>
+		<p>As the data from subsequent months become available, it will be analyzed whether this impulse should be modified 
+		by another type of intervention or if interventions should be carried out in other data in the series.</p>-->
+						 
+			   <!-- fin datos -->				
+
+       <div class="otraActividad">
+         <p>Related Activity:</p>
+         <ul>
+           <li><a href='../eindus/index-en.htm'>Annual Industrial Survey of Companies</a></li>
+           <li><a href='../encindusprod/index-en.htm'>Annual Industrial Products Survey</a></li>
+         </ul>
+       </div>
+     </div>
+    </td></tr>
+   </table>
+
+  </div>
+  <!-- fin bloque de contenido -->
+
+   </div> <!-- fin sinid_1 -->
+  </div> <!-- fin id=cuerpo -->
+  <!-- fin Cuerpo -->
+  
+<?php include 'pie.php'; ?>

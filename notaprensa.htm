@@ -1,0 +1,114 @@
+		
+<?php
+include_once '../portal/class/general.php';
+include       'config.php';
+
+$titulo = "Nota divulgativa";
+$tipo = NOTA_PRENSA;
+$descripcion = "";
+
+//elementos opcionales de la nota de prensa
+//ponemos TRUE si queremos que salga y FALSE si no
+$logoeuropa = TRUE;  
+$logofse    = TRUE;
+$cajetilla  = TRUE;
+$suscripcion = TRUE;
+
+include 'cabecera.php';
+?>
+
+
+  <!-- Cuerpo -->
+  <div id='cuerpo'>
+   <div> <!-- sinid_1 -->
+   <h1 class='displaynone'>Nota divulgativa</h1>
+   <!-- bloque de contenido -->
+   <div id='container'>
+	<div id='notaprensa'>
+	  
+	  <!-- encabezado de la nota de prensa -->
+	  <div id='titNota'>
+		<img src='http://www.juntadeandalucia.es/institutodeestadisticaycartografia/portal/images/images/notaprensa1.png' alt='Nota de Prensa'>
+		<h2>Índice de Producción Industrial de Andalucía. Noviembre 2022</h2>
+		<div class='alignright'>
+		<img src='<?=BASE_URL ?>portal/images/images/andaluciasemueveconeuropa.png' alt='Andalucia se mueve' >
+		</div>
+		<!-- herramientas de la nota de prensa -->
+		<div class='centrar no_imprimir'>
+		  <a href='index.htm'>[Página del producto]</a>
+		</div>
+	  </div>
+	  <?php include 'social.php'; ?>
+	  
+	  <!-- cuerpo de la nota de prensa -->
+	  <div id='cuerponota'>
+		
+		<div id='titular'>
+		 <!--<h3 class='color1'><?=$descripcion ?></h3>--><br>
+		 <div class='textodestacado'>
+		 <ul>
+		 <li>La producción industrial andaluza decreció un 4,5% en noviembre respecto al mismo mes de 2021. <!--En términos acumulados la variación interanual ha sido del 5,0%.--></li>
+		 <li>La tasa de variación interanual creció un 2,6% en bienes de consumo y un 2,2% en bienes de equipo, y decreció un 3,4% en bienes intermedios y un 17,6% en energía.</li>
+		 <li>Respecto al mes anterior el Índice de Producción Industrial de Andalucía decreció un 7,1%.</li>
+		 </ul>
+		 </div>
+		</div>
+	
+		<div id='textoprensa'>
+		<p class='actualizacion'>Andalucía, 11 de enero de 2023.</p>
+	
+		<p>Según los resultados del <em>Índice de Producción Industrial de Andalucía</em>, corregido de efectos estacionales y de calendario, el pasado mes de noviembre el índice de producción decreció un 4,5% respecto al mismo mes del año anterior, y disminuyó un 7,1% respecto al mes anterior.</p>  
+		<p>Atendiendo a la clasificación de los bienes según su funcionalidad (por destino económico), la tasa de variación interanual creció un 2,6% en bienes de consumo y un 2,2% en bienes de equipo, y decreció un 3,4% en bienes intermedios y un 17,6% en energía.</p>
+		<p>En términos brutos, la variación interanual del índice de producción industrial fue del -5,6% en el mes de noviembre, y del 5,2% en el conjunto de los once primeros meses del año. En lo que respecta a la clasificación de los bienes según su funcionalidad, las tasas interanuales fueron de un 2,1% en bienes de equipo, un -0,6% en bienes de consumo, un -2,7% en bienes intermedios y un -17,6% en energía.</p>
+		<p class='titgraf'>Índice general y corregido de efectos estacionales y de calendario<br><img src='graficos/graf1.png' alt='Índice general y corregido de efectos estacionales y de calendario'></p>
+		<p>&nbsp;</p>
+		<p class='titgraf'>Índices por destino económico. Tasas de variación interanual corregidas de efectos estacionales y de calendario. Noviembre 2022<br><img src='graficos/graf2.png' alt='Índices por destino económico. Tasas de variación interanual corregidas de efectos estacionales y de calendario'></p>
+
+		<p>Por secciones de la CNAE-09, la tasa de variación interanual, corregida de efectos estacionales y de calendario, experimentó en el mes de noviembre un crecimiento del 13,6% en las <em>Industrias extractivas</em>, y decrecimientos del 1,5% en la <em>Industria manufacturera</em>, del 4,2% en el <em>Suministro de agua, actividades de saneamiento, gestión de residuos y descontaminación</em> y del 18,1% en el <em>Suministro de energía eléctrica, gas, vapor y aire acondicionado</em>. Los pesos en el Índice General de estos sectores son, respectivamente, del 1,6%, el 72,0%, el 6,3% y del 20,1%.</p>
+		<p class='titgraf'>Índices por secciones CNAE-09. Peso en el índice general y tasas de variación interanual<br>corregidas de efectos estacionales y de calendario. Noviembre 2022<br><img src='graficos/graf3.png' alt='Índices por ramas de actividad. Peso en el índice general y tasas de variación interanual corregidas de efectos estacionales y de calendario'></p>
+
+		<p>Considerando la serie en términos brutos, en el mes de noviembre de 2022, se produjeron crecimientos interanuales del 17,1% en las <em>Industrias extractivas</em>, y decrecimientos del 2,5% en la <em>Industria manufacturera</em>, del 3,9% en el <em>Suministro de agua, actividades de saneamiento, gestión de residuos y descontaminación</em> y del 21,6% en el <em>Suministro de energía eléctrica, gas, vapor y aire acondicionado</em>.</p>
+		<p>En un análisis más detallado, las divisiones de la CNAE-09 que presentaron mayor repercusión<sup>1</sup> positiva en la tasa interanual del Índice general, en el mes de noviembre, fueron las actividades de <em>Fabricación de bebidas</em>, con una repercusión de 1,0 y la <em>Fabricación de productos metálicos, excepto maquinaria y equipo</em>, con una repercusión del 0,5. Las divisiones con mayor repercusión negativa fueron la de <em>Suministro de energía eléctrica, gas, vapor y aire acondicionado</em>, con una repercusión del -3,6 y la <em>Industria de la alimentación</em>, con una repercusión de -1,5.</p>
+		<p class='titgraf'>Divisiones con mayor repercusión (positiva y negativa) en la tasa interanual del Índice General. Noviembre 2022<br><img src='graficos/graf4.png' alt='Divisiones con mayor repercusión (positiva y negativa) en la tasa anual del Índice General'></p>
+		
+		 <p><strong>Nota metodológica COVID-19:</strong></p>
+		 <!--<p><p>Para las series ajustadas de efectos estacionales y de calendario, el Instituto de Estadística y Cartografía de Andalucía ha realizado un planteamiento de modelización metodológica acorde con las orientaciones de la Oficina Estadística de la Unión Europea (Eurostat). De esta manera, se ha modelizado un outlier aditivo, en los datos referidos a marzo de 2020, para estimar el efecto que el COVID- 19 ha provocado en las series durante este mes.</p>
+		 <p>Conforme vayan estando disponibles los datos de meses posteriores, se irá analizando si este impulso debe modificarse por otro tipo de intervención o si deben realizarse intervenciones en otros datos de la serie.</p>-->
+		 <p>Para las series ajustadas de efectos estacionales y de calendario, el Instituto de Estadística y Cartografía de Andalucía ha realizado un planteamiento de modelización metodológica acorde con las orientaciones de la Oficina Estadística de la Unión Europea (Eurostat). De esta forma, cuando se ha comprobado su significatividad, se han introducido los outliers necesarios con el objeto de modelizar el efecto que el COVID-19 está teniendo en las series.</p>
+		 <p>Conforme vayan estando disponibles los datos de periodos posteriores, se irán analizando si estos outliers tienen que modificarse por otros tipos de intervención de acuerdo con el comportamiento de las distintas series.</p>
+		</div>
+  
+		<div id='cajetilla' class='fondocolor3'>
+		<p>El Índice de Producción Industrial de Andalucía tiene por objeto medir la oferta de bienes producidos mensualmente por la industria andaluza, indicando la evolución mensual que experimenta la parte del Valor Añadido Bruto (VAB) que tiene su origen en el sector industrial.</p>
+
+		<!--<p>El Índice de Producción Industrial de Andalucía tiene por objeto medir la evolución de la producción del sector industrial de Andalucía con respecto a un periodo base.</p>
+		<p>El Código de buenas prácticas de las Estadísticas Europeas, adoptado por el Comité del Programa Estadístico de la Unión Europea del 24 de febrero de 2005, plantea entre sus principios la necesidad de que los recursos a disposición de la estadística sean suficientes, pero también que la carga sobre los encuestados no sea excesiva.</p>
+		<p>En este sentido y con el fin de evitar la duplicidad de la información y reducir la encuestación a las empresas andaluzas, el Instituto de Estadística y Cartografía de Andalucía y el Instituto Nacional de Estadística (INE) han unificado las operaciones del Índice de Producción Industrial que hasta ahora venían elaborando ambos organismos para Andalucía.</p>
+		<p>El fruto de este trabajo es que, a partir del índice correspondiente al mes de enero de 2009, se publica un único indicador para Andalucía elaborado con una muestra de establecimientos, productos y ponderaciones consensuada entre ambos institutos de estadística, que garantiza resultados óptimos de las desagregaciones que ya ofrecía el Instituto de Estadística y Cartografía de Andalucía.</p>-->
+						
+		</div>
+		
+		<div id='notaalpie'>
+		<p><sup>1</sup>Se entiende por repercusión de una división de actividad a la parte de la tasa anual del Índice General explicada por la variación anual de dicha división.</p>  
+		</div>
+		<br>
+		
+		<p class="marcofondos"><img src="../../portal/images/icons/Logo_UE_FEDER.gif" class="brd" alt="Fondos"></p>
+	
+		<br>
+	    <div id='suscripcion' class='sombra <?=muestra($suscripcion) ?>'>
+	    <p>Si desea recibir vía correo electrónico las notas divulgativas de los productos y servicios del Instituto de Estadística y Cartografía de Andalucía, puede suscribirse a través del <a href="http://www.juntadeandalucia.es/institutodeestadisticaycartografia/ieagen/suscripcion/index.htm">Formulario de Suscripción</a>.</p>
+	    </div>
+   
+	  </div>
+	  
+	 </div><!-- fin id=notaprensa -->
+	</div>
+	<!-- fin bloque de contenido -->
+   </div> <!-- fin sinid_1 -->
+  </div> <!-- fin id=cuerpo -->
+  <!-- fin Cuerpo -->
+  
+  
+
+<?php  include 'pie.php'; ?>
